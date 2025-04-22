@@ -1,143 +1,123 @@
-/* GENERAL STYLES */
+/* Base Styling */
 body {
-    font-family: "Times New Roman", serif;
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4faff;
-    color: #222;
+    background-color: #f5faff;
+    color: #1a1a1a;
 }
 
+/* Header */
 header {
-    background: #1e88e5;
-    color: #fff;
-    padding: 20px 0;
+    background: linear-gradient(to right, #1f3b73, #4f9ec4);
+    color: white;
+    padding: 25px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
+    font-size: 3em;
     margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 1px;
+    font-weight: 600;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
+    margin: 15px 0 0 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #dcefff;
 }
 
+/* Section Containers */
 section {
-    padding: 30px;
+    padding: 40px;
     margin: 20px auto;
-    max-width: 900px;
+    max-width: 1000px;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
 }
 
-h2 {
-    font-size: 2em;
-    color: #1565c0;
-    margin-bottom: 20px;
+/* About Section */
+#about {
+    background: #e8f2fb;
     text-align: center;
 }
 
-/* PRODUCTS SECTION */
+#about h2 {
+    color: #2e3d56;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Product Section */
 #products {
-    background-color: #ffffff;
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
-}
-
-#products h2 {
-    color: #1565c0;
-    font-size: 2.5em;
-    margin-bottom: 30px;
+    background: #f0f8ff;
 }
 
 .product {
-    border: 1px solid #ccc;
+    background: white;
+    border-left: 6px solid #2e3d56;
     padding: 20px;
-    margin: 15px 0;
+    margin: 20px 0;
     border-radius: 10px;
-    background-color: #f0f8ff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.product:hover {
+    transform: scale(1.02);
 }
 
 .product h3 {
-    font-size: 1.8em;
-    color: #0d47a1;
-    margin-bottom: 10px;
+    color: #1e3c72;
+    margin-bottom: 5px;
 }
 
 .product h5 {
-    color: #222;
-    margin-bottom: 15px;
-    font-size: 1.2em;
+    color: #4f9ec4;
+    margin: 0;
 }
 
 .product p {
+    margin-top: 10px;
     font-size: 1em;
-    color: #333;
-    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-.buy-btn {
-    background-color: #1e88e5;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.buy-btn:hover {
-    background-color: #1565c0;
-    box-shadow: 0 0 8px #2196f3;
-}
-
-/* CONTACT SECTION */
+/* Contact Section */
 #contact {
-    background: #d6ecfa;
+    background: #dcefff;
     color: #2e2e2e;
-    text-align: center;
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 700px;
-    border-radius: 12px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
 }
 
 #contact h2 {
-    color: #1565c0;
-    font-size: 2em;
-    margin-bottom: 20px;
+    color: #1f3b73;
 }
 
 #contact form {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,56 +142,56 @@ h2 {
 
 #contact input[type="submit"] {
     padding: 12px 24px;
-    background-color: #1e88e5;
+    background-color: #1f3b73;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 #contact input[type="submit"]:hover {
-    background-color: #1565c0;
-    box-shadow: 0 0 10px #2196f3;
+    background-color: #16305d;
 }
-
-/* APPOINTMENT SECTION */
+/* Appointment Section */
 #appointment {
-    background: #d6ecfa;
-    color: #2e2e2e;
-    text-align: center;
-    padding: 40px;
+    background: #ffffff;
+    padding: 30px;
     margin: 20px auto;
-    max-width: 700px;
+    max-width: 900px;
     border-radius: 12px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
 }
 
 #appointment h2 {
-    color: #1565c0;
+    color: #1f3b73;
+    font-size: 2.5em;
+    font-weight: 600;
     margin-bottom: 20px;
-    font-size: 2em;
 }
 
 #appointment form {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
 }
 
 #appointment label {
     font-size: 1.1em;
+    margin: 10px 0 5px;
+    color: #2e3d56;
 }
 
 #appointment input[type="text"],
 #appointment input[type="email"],
-#appointment input[type="date"],
-#appointment input[type="time"] {
+#appointment input[type="datetime-local"] {
     width: 90%;
     max-width: 400px;
     padding: 12px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1em;
@@ -220,26 +200,31 @@ h2 {
 
 #appointment input[type="submit"] {
     padding: 12px 24px;
-    background-color: #1e88e5;
+    background-color: #1f3b73;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 #appointment input[type="submit"]:hover {
-    background-color: #1565c0;
-    box-shadow: 0 0 10px #2196f3;
+    background-color: #16305d;
 }
 
-/* FOOTER */
+#appointment p {
+    font-size: 1.1em;
+    color: #2e3d56;
+    margin-top: 20px;
+}
+
+/* Footer */
 footer {
+    background-color: #1a1a1a;
+    color: white;
     text-align: center;
     padding: 15px 0;
-    background: #1e1e1e;
-    color: #fff;
-    margin-top: 40px;
     font-size: 0.95em;
+    margin-top: 40px;
 }
