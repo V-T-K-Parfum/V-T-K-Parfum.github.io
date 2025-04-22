@@ -1,6 +1,6 @@
 /* Base Styling */
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     background-color: #f5faff;
@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(to right, #1f3b73, #4f9ec4);
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
     color: white;
     padding: 25px 0;
     text-align: center;
@@ -19,7 +19,7 @@ header {
 header h1 {
     font-size: 3em;
     margin: 0;
-    font-weight: 600;
+    font-weight: normal;
 }
 
 /* Navigation */
@@ -37,13 +37,13 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #dcefff;
+    color: #dff6ff;
 }
 
 /* Section Containers */
@@ -53,18 +53,17 @@ section {
     max-width: 1000px;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.05);
 }
 
 /* About Section */
 #about {
-    background: #e8f2fb;
+    background: #e4f2fb;
     text-align: center;
 }
 
 #about h2 {
-    color: #2e3d56;
-    font-weight: bold;
+    color: #3a7bd5;
 }
 
 #about p {
@@ -79,7 +78,7 @@ section {
 
 .product {
     background: white;
-    border-left: 6px solid #2e3d56;
+    border-left: 6px solid #3a7bd5;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -91,29 +90,28 @@ section {
 }
 
 .product h3 {
-    color: #1e3c72;
+    color: #1976d2;
     margin-bottom: 5px;
 }
 
 .product h5 {
-    color: #4f9ec4;
+    color: #0288d1;
     margin: 0;
 }
 
 .product p {
     margin-top: 10px;
     font-size: 1em;
-    line-height: 1.5;
 }
 
 /* Contact Section */
 #contact {
-    background: #dcefff;
+    background: #d6ecfa;
     color: #2e2e2e;
 }
 
 #contact h2 {
-    color: #1f3b73;
+    color: #1565c0;
 }
 
 #contact form {
@@ -142,7 +140,7 @@ section {
 
 #contact input[type="submit"] {
     padding: 12px 24px;
-    background-color: #1f3b73;
+    background-color: #1e88e5;
     color: white;
     border: none;
     border-radius: 8px;
@@ -152,71 +150,7 @@ section {
 }
 
 #contact input[type="submit"]:hover {
-    background-color: #16305d;
-}
-/* Appointment Section */
-#appointment {
-    background: #ffffff;
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
-    text-align: center;
-}
-
-#appointment h2 {
-    color: #1f3b73;
-    font-size: 2.5em;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-#appointment form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#appointment label {
-    font-size: 1.1em;
-    margin: 10px 0 5px;
-    color: #2e3d56;
-}
-
-#appointment input[type="text"],
-#appointment input[type="email"],
-#appointment input[type="datetime-local"] {
-    width: 90%;
-    max-width: 400px;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1em;
-    background-color: #f9fcff;
-}
-
-#appointment input[type="submit"] {
-    padding: 12px 24px;
-    background-color: #1f3b73;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#appointment input[type="submit"]:hover {
-    background-color: #16305d;
-}
-
-#appointment p {
-    font-size: 1.1em;
-    color: #2e3d56;
-    margin-top: 20px;
+    background-color: #1565c0;
 }
 
 /* Footer */
