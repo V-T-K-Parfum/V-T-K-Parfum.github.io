@@ -1,168 +1,101 @@
-/* Base Styling */
+/* GENERAL STYLES */
 body {
-    font-family: 'Times New Roman', serif;
+    font-family: "Times New Roman", serif;
     margin: 0;
     padding: 0;
-    background-color: #f5faff;
-    color: #1a1a1a;
+    background-color: #f4faff;
+    color: #222;
 }
 
-/* Header */
 header {
-    background: linear-gradient(to right, #3a7bd5, #00d2ff);
-    color: white;
-    padding: 25px 0;
+    background: #1e88e5;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 3em;
     margin: 0;
-    font-weight: normal;
+    font-size: 2.5em;
+    letter-spacing: 1px;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 15px 0 0 0;
+    margin-top: 10px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 1.1em;
 }
 
 nav ul li a:hover {
-    color: #dff6ff;
+    text-decoration: underline;
 }
 
-/* Section Containers */
 section {
-    padding: 40px;
+    padding: 30px;
     margin: 20px auto;
-    max-width: 1000px;
+    max-width: 900px;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* About Section */
-#about {
-    background: #e4f2fb;
+h2 {
+    font-size: 2em;
+    color: #1565c0;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-#about h2 {
-    color: #3a7bd5;
-}
-
-#about p {
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-/* Product Section */
-#products {
-    background: #f0f8ff;
-}
-
+/* PRODUCT STYLES */
 .product {
-    background: white;
-    border-left: 6px solid #3a7bd5;
+    border: 1px solid #ccc;
     padding: 20px;
-    margin: 20px 0;
+    margin: 15px 0;
     border-radius: 10px;
-    transition: transform 0.2s ease;
-}
-
-.product:hover {
-    transform: scale(1.02);
+    background-color: #f0f8ff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 .product h3 {
-    color: #1976d2;
-    margin-bottom: 5px;
+    font-size: 1.5em;
+    color: #0d47a1;
 }
 
 .product h5 {
-    color: #0288d1;
-    margin: 0;
+    color: #222;
+    margin-bottom: 10px;
 }
 
-.product p {
-    margin-top: 10px;
-    font-size: 1em;
-}
-
-/* Contact Section */
-#contact {
-    background: #d6ecfa;
-    color: #2e2e2e;
-}
-
-#contact h2 {
-    color: #1565c0;
-}
-
-#contact form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact label {
-    font-size: 1.1em;
-    margin: 10px 0 5px;
-}
-
-#contact input[type="text"],
-#contact input[type="email"] {
-    width: 90%;
-    max-width: 400px;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1em;
-    background-color: #f9fcff;
-}
-
-#contact input[type="submit"] {
-    padding: 12px 24px;
+.buy-btn {
     background-color: #1e88e5;
     color: white;
     border: none;
+    padding: 10px 20px;
+    margin-top: 12px;
     border-radius: 8px;
-    font-size: 1.1em;
+    font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-#contact input[type="submit"]:hover {
+.buy-btn:hover {
     background-color: #1565c0;
+    box-shadow: 0 0 8px #2196f3;
 }
 
-/* Footer */
-footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.95em;
-    margin-top: 40px;
-}
-/* Contact Section */
+/* CONTACT SECTION */
 #contact {
     background: #d6ecfa;
     color: #2e2e2e;
@@ -196,6 +129,93 @@ footer {
     width: 90%;
     max-width: 400px;
     padding: 12px;
-    margin-bottom:
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9fcff;
 }
 
+#contact input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #1565c0;
+    box-shadow: 0 0 10px #2196f3;
+}
+
+/* APPOINTMENT SECTION */
+#appointment {
+    background: #d6ecfa;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+}
+
+#appointment h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#appointment form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#appointment label {
+    font-size: 1.1em;
+}
+
+#appointment input[type="text"],
+#appointment input[type="email"],
+#appointment input[type="date"],
+#appointment input[type="time"] {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9fcff;
+}
+
+#appointment input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#appointment input[type="submit"]:hover {
+    background-color: #1565c0;
+    box-shadow: 0 0 10px #2196f3;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #1e1e1e;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.95em;
+}
