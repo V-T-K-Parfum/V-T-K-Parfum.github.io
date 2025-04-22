@@ -162,3 +162,64 @@ footer {
     font-size: 0.95em;
     margin-top: 40px;
 }
+#appointment {
+    background-color: #f2faff;
+    color: #2c3e50;
+    text-align: center;
+}
+
+#appointment form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#appointment label {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+#appointment input[type="text"],
+#appointment input[type="email"],
+#appointment input[type="date"],
+#appointment input[type="time"] {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#appointment input[type="submit"] {
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#appointment input[type="submit"]:hover {
+    background-color: #1565c0;
+}
+
+.buy-btn {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 12px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #1565c0;
+}
+
