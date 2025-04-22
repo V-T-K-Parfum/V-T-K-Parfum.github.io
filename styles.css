@@ -162,64 +162,40 @@ footer {
     font-size: 0.95em;
     margin-top: 40px;
 }
-#appointment {
-    background-color: #f2faff;
-    color: #2c3e50;
+/* Contact Section */
+#contact {
+    background: #d6ecfa;
+    color: #2e2e2e;
     text-align: center;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
 }
 
-#appointment form {
-    margin-top: 20px;
+#contact h2 {
+    color: #1565c0;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#appointment label {
-    margin-top: 10px;
+#contact label {
     font-size: 1.1em;
+    margin: 10px 0 5px;
 }
 
-#appointment input[type="text"],
-#appointment input[type="email"],
-#appointment input[type="date"],
-#appointment input[type="time"] {
+#contact input[type="text"],
+#contact input[type="email"] {
     width: 90%;
     max-width: 400px;
     padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
+    margin-bottom:
 
-#appointment input[type="submit"] {
-    background-color: #1e88e5;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1em;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-#appointment input[type="submit"]:hover {
-    background-color: #1565c0;
-}
-
-.buy-btn {
-    background-color: #1e88e5;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 12px;
-    border-radius: 6px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.buy-btn:hover {
-    background-color: #1565c0;
-}
 
