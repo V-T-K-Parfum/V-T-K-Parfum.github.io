@@ -1,6 +1,6 @@
 /* Global Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
@@ -14,11 +14,17 @@ header {
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #ff6347;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 2px 2px #ff7f50;
 }
 
 /* Navigation Styling */
@@ -30,13 +36,15 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -62,7 +70,9 @@ section {
 }
 
 #about p {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    line-height: 1.5;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
 }
 
 /* Product Section */
@@ -80,17 +90,23 @@ section {
 }
 
 .product h3 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #ff6347;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .product h5 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #8bc34a;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
 }
 
 .product p {
+    font-size: 1.2em;
     color: #555;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
 }
 
 /* Contact Section */
@@ -109,19 +125,21 @@ section {
 }
 
 #contact label {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 10px 0;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
 }
 
 #contact input[type="text"],
 #contact input[type="email"] {
     width: 80%;
-    padding: 12px;
+    padding: 14px;
     margin-bottom: 15px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 1px solid #ccc;
     font-size: 1.1em;
     color: #333;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
 }
 
 #contact input[type="text"]:focus,
@@ -131,13 +149,14 @@ section {
 }
 
 #contact input[type="submit"] {
-    padding: 12px 25px;
+    padding: 14px 28px;
     background-color: #ff6347;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.4em;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
     transition: background-color 0.3s ease;
 }
 
@@ -152,4 +171,5 @@ footer {
     text-align: center;
     padding: 15px 0;
     margin-top: 20px;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
 }
