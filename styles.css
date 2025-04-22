@@ -58,7 +58,23 @@ h2 {
     text-align: center;
 }
 
-/* PRODUCT STYLES */
+/* PRODUCTS SECTION */
+#products {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+#products h2 {
+    color: #1565c0;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
 .product {
     border: 1px solid #ccc;
     padding: 20px;
@@ -66,26 +82,34 @@ h2 {
     border-radius: 10px;
     background-color: #f0f8ff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 .product h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #0d47a1;
+    margin-bottom: 10px;
 }
 
 .product h5 {
     color: #222;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.product p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .buy-btn {
     background-color: #1e88e5;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin-top: 12px;
+    padding: 12px 20px;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
