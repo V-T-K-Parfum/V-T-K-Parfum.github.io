@@ -1,15 +1,15 @@
 /* Base Styling */
 body {
-    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
     background-color: #f5faff;
-    color: #333;
+    color: #1a1a1a;
 }
 
 /* Header */
 header {
-    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    background: linear-gradient(to right, #1f3b73, #4f9ec4);
     color: white;
     padding: 25px 0;
     text-align: center;
@@ -17,7 +17,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.8em;
+    font-size: 3em;
     margin: 0;
     font-weight: 600;
 }
@@ -37,13 +37,13 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1.1em;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #e0f7ff;
+    color: #dcefff;
 }
 
 /* Section Containers */
@@ -53,17 +53,18 @@ section {
     max-width: 1000px;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
 }
 
 /* About Section */
 #about {
-    background: #e4f2fb;
+    background: #e8f2fb;
     text-align: center;
 }
 
 #about h2 {
-    color: #3a7bd5;
+    color: #2e3d56;
+    font-weight: bold;
 }
 
 #about p {
@@ -78,7 +79,7 @@ section {
 
 .product {
     background: white;
-    border-left: 6px solid #00bcd4;
+    border-left: 6px solid #2e3d56;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -90,28 +91,29 @@ section {
 }
 
 .product h3 {
-    color: #1976d2;
+    color: #1e3c72;
     margin-bottom: 5px;
 }
 
 .product h5 {
-    color: #0288d1;
+    color: #4f9ec4;
     margin: 0;
 }
 
 .product p {
     margin-top: 10px;
     font-size: 1em;
+    line-height: 1.5;
 }
 
 /* Contact Section */
 #contact {
-    background: #d6ecfa;
+    background: #dcefff;
     color: #2e2e2e;
 }
 
 #contact h2 {
-    color: #1565c0;
+    color: #1f3b73;
 }
 
 #contact form {
@@ -135,11 +137,12 @@ section {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1em;
+    background-color: #f9fcff;
 }
 
 #contact input[type="submit"] {
     padding: 12px 24px;
-    background-color: #1e88e5;
+    background-color: #1f3b73;
     color: white;
     border: none;
     border-radius: 8px;
@@ -149,12 +152,12 @@ section {
 }
 
 #contact input[type="submit"]:hover {
-    background-color: #1565c0;
+    background-color: #16305d;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
     padding: 15px 0;
