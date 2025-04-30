@@ -4,7 +4,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
-    const subject = encodeURIComponent("V.T.K Parfum Buyer: " + name);
+    const subject = encodeURIComponent("V.T.K Cologne Buyer: " + name);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage: [Type your message here and/or purchase and/or your appointement date.]`);
 
     window.location.href = `mailto:kum0503@dcds.edu,var0902@dcds.edu,kar145070@dcds.edu,gur160383@dcds.edu?subject=${subject}&body=${body}`;
