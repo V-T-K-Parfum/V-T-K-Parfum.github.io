@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="eK9p9hKKTVlqywSYhrP-JdJTlamqv4oyKqacLA2krLo" />
-    <title>V.T.K Cologne – Official Website</title>
-    <meta name="description" content="Discover handcrafted colognes from V.T.K Cologne, including Citrus Pear, Miami Mist, and Stronger With You Oud. Only $7." />
-    <meta name="keywords" content="V.T.K Cologne, fragrance, Citrus Pear, Miami Mist, Stronger With You Oud, Luxury Scents." />
-    <meta name="author" content="V.T.K Cologne" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.T.K Cologne</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <!-- Header Section -->
-    <header class="hero">
-        <nav class="navbar">
+    <header class="header">
+        <div class="container">
             <h1 class="logo">V.T.K Cologne</h1>
-            <div class="cart-icon">
-                <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
-            </div>
-        </nav>
-        <div class="hero-text">
-            <h2>Unleash Your Signature</h2>
-            <p>Luxury scents. Unforgettable impressions.</p>
+            <button class="cart-btn">Cart (0)</button>
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Unleash Your Signature</h2>
+            <p>Luxury scents. Unforgettable impressions.</p>
+        </div>
+    </section>
+
     <!-- Products Section -->
     <section class="products">
-        <h2>Our Colognes</h2>
-        <div class="card-grid">
-            <div class="card" data-id="1">
-                <img src="images/citrus-pear.jpg" alt="Citrus Pear" />
-                <div class="info">
+        <div class="container">
+            <h2>Our Colognes</h2>
+            <div class="product-cards">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <img src="images/citrus-pear.jpg" alt="Citrus Pear">
                     <h3>Citrus Pear</h3>
                     <p>Fresh, crisp, and invigorating. A burst of citrus with subtle pear undertones.</p>
                     <span class="price">$7.00</span>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
-            </div>
-            <div class="card" data-id="2">
-                <img src="images/miami-mist.jpeg" alt="Miami Mist" />
-                <div class="info">
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <img src="images/miami-mist.jpg" alt="Miami Mist">
                     <h3>Miami Mist</h3>
                     <p>A cool aquatic vibe with tropical hints. Bold and breezy like the coast.</p>
                     <span class="price">$7.00</span>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
-            </div>
-            <div class="card" data-id="3">
-                <img src="images/stronger-oud.jpg" alt="Stronger With You Oud" />
-                <div class="info">
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <img src="images/stronger-oud.jpg" alt="Stronger With You Oud">
                     <h3>Stronger With You Oud</h3>
                     <p>Rich, deep oud blended with spice and warmth. For a powerful presence.</p>
                     <span class="price">$7.00</span>
@@ -64,14 +58,14 @@
 
     <!-- Contact Us Section -->
     <section class="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-form">
-            <form id="contactForm">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" required>
 
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
@@ -82,12 +76,11 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 V.T.K Cologne. All rights reserved.</p>
-        <p class="coming-soon">More colognes coming soon!</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 V.T.K Cologne. All rights reserved.</p>
+            <p class="coming-soon">More colognes coming soon!</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
