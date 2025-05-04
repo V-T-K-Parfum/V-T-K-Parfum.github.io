@@ -1,27 +1,61 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+// Initialize cart
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-
-    const subject = encodeURIComponent("V.T.K Cologne Buyer: " + name);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage: [Type your message here and/or purchase and/or your appointement date.]`);
-
-    window.location.href = `mailto:kum0503@dcds.edu,var0902@dcds.edu,kar145070@dcds.edu,gur160383@dcds.edu?subject=${subject}&body=${body}`;
-});
-// Handle appointment form submission
-document.getElementById('appointment-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('appt-name').value;
-    const email = document.getElementById('appt-email').value;
-    const date = document.getElementById('appt-date').value;
-    const time = document.getElementById('appt-time').value;
-
-    alert(`Thank you, ${name}! Your appointment is booked for ${date} at ${time}.`);
-    // Idk what to type here
-});
-
-// why do we need comments
-function buyProduct(productName) {
-    alert(`You selected to buy "${productName}". Please contact Vihaan, Tej, or Keshav to complete the order.`);
+// Update cart count in navbar
+function updateCartCount() {
+  document.getElementById('cartCount').innerText = cart.length;
 }
+
+// Add item to cart
+function addToCart(productId, productName, productPrice) {
+  cart.push({ id: productId, name: productName, price: productPrice });
+  localStorage.setItem('cart', JSON.stringify(cart));
+  updateCartCount();
+}
+
+// Render cart items
+function renderCart() {
+  const cartItemsContainer = document.getElementById('cartItems');
+  cartItemsContainer.innerHTML = '';
+  let total = 0;
+  cart.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.name} - $${item.price}`;
+    cartItemsContainer.appendChild(li);
+    total += item.price;
+  });
+  document.getElementById('totalPrice').innerText = total.toFixed(2);
+}
+
+// Open cart modal
+document.getElementById('cartBtn').addEventListener('click', () => {
+  document.getElementById('cartModal').style.display = 'flex';
+  renderCart();
+});
+
+// Close cart modal
+document.getElementById('closeCart').addEventListener('click', () => {
+  document.getElementById('cartModal').style.display = 'none';
+});
+
+// Clear cart
+document.getElementById('clearCart').addEventListener('click', () => {
+  cart = [];
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart();
+  updateCartCount();
+});
+
+// Add to cart button event listeners
+document.querySelectorAll('.add-to-cart').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const card = e.target.closest('.card');
+    const productId = card.dataset.id;
+    const productName = card.querySelector('h3').textContent;
+    const productPrice = 7; // Fixed price for all products
+    addToCart(productId, productName, productPrice);
+  });
+});
+
+// Initial setup
+updateCartCount();
