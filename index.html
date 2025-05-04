@@ -9,9 +9,10 @@
   <meta name="keywords" content="V.T.K Cologne, fragrance, Citrus Pear, Miami Mist, Stronger With You Oud, Luxury Scents.">
   <meta name="author" content="V.T.K Cologne">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Hero Section -->
   <header class="hero">
     <nav class="navbar">
       <h1 class="logo">V.T.K Cologne</h1>
@@ -22,12 +23,15 @@
     <div class="hero-text">
       <h2>Unleash Your Signature</h2>
       <p>Luxury scents. Unforgettable impressions.</p>
+      <a href="#products" class="btn-hero">Shop Now</a>
     </div>
   </header>
 
-  <section class="products">
+  <!-- Products Section -->
+  <section class="products" id="products">
     <h2>Our Colognes</h2>
     <div class="card-grid">
+      <!-- Citrus Pear -->
       <div class="card" data-id="1">
         <img src="images/citrus-pear.jpg" alt="Citrus Pear" />
         <div class="info">
@@ -37,6 +41,7 @@
           <button class="add-to-cart">Add to Cart</button>
         </div>
       </div>
+      <!-- Miami Mist -->
       <div class="card" data-id="2">
         <img src="images/miami-mist.jpeg" alt="Miami Mist" />
         <div class="info">
@@ -46,11 +51,12 @@
           <button class="add-to-cart">Add to Cart</button>
         </div>
       </div>
+      <!-- Stronger With You Oud -->
       <div class="card" data-id="3">
         <img src="images/stronger-oud.jpg" alt="Stronger With You Oud" />
         <div class="info">
           <h3>Stronger With You Oud</h3>
-          <p>Rich, deep oud blended with spice and warmth. For powerful presence.</p>
+          <p>Rich, deep oud blended with spice and warmth. For a powerful presence.</p>
           <span class="price">$7.00</span>
           <button class="add-to-cart">Add to Cart</button>
         </div>
@@ -58,6 +64,7 @@
     </div>
   </section>
 
+  <!-- Cart Modal -->
   <section class="cart-modal" id="cartModal">
     <div class="cart-modal-content">
       <h2>Your Cart</h2>
@@ -68,6 +75,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 V.T.K Cologne. All rights reserved.</p>
   </footer>
