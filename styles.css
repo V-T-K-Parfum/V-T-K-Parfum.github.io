@@ -27,8 +27,9 @@ a {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: #fff;
 }
 
 .cart-icon button {
@@ -45,14 +46,9 @@ a {
   background-color: #ff4d4d;
 }
 
-/* Add margin to space out the logo and the cart */
-.navbar .logo {
-  margin-right: 30px; /* Adjust this value to create the desired space */
-}
-
 /* Hero Section */
 .hero {
-  background-image: url('images/hero-bg.jpg'); /* Replace with your image */
+  background-image: url('images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -61,7 +57,7 @@ a {
 }
 
 .hero-text h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
