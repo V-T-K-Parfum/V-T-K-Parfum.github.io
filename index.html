@@ -1,100 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="eK9p9hKKTVlqywSYhrP-JdJTlamqv4oyKqacLA2krLo"/>
-    <title>V.T.K Cologne – Offical Website</title>
-    <meta name="description" content="Discover handcrafted colognes from V.T.K Cologne, including Citrus Pear, Miami Mist, and Stronger With You Oud. Only $7.">
-    <meta name="keywords" content="V.T.K Cologne, fragrance, Citrus Pear, Miami Mist, Stronger With You Oud, Luxury Scents.">
-    <meta name="author" content="V.T.K Cologne">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="eK9p9hKKTVlqywSYhrP-JdJTlamqv4oyKqacLA2krLo"/>
+  <title>V.T.K Cologne – Official Website</title>
+  <meta name="description" content="Discover handcrafted colognes from V.T.K Cologne, including Citrus Pear, Miami Mist, and Stronger With You Oud. Only $7.">
+  <meta name="keywords" content="V.T.K Cologne, fragrance, Citrus Pear, Miami Mist, Stronger With You Oud, Luxury Scents.">
+  <meta name="author" content="V.T.K Cologne">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <h1>V.T.K Cologne</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">V.T.K Cologne</h1>
+      <div class="cart-icon">
+        <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+      </div>
+    </nav>
+    <div class="hero-text">
+      <h2>Unleash Your Signature</h2>
+      <p>Luxury scents. Unforgettable impressions.</p>
+    </div>
+  </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At V.T.K Cologne, we create exquisite fragrances that captivate the senses.</p>
-    </section>
-
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product">
-            <h3>Citrus Pear</h3><h5>Price:$7</h5>
-            <p>Citrus Pear is made with real and rich ingredients, hand picked. It contains premium saffron, 24 karat gold, and the essence of a citrus fruit.</p>
+  <section class="products">
+    <h2>Our Colognes</h2>
+    <div class="card-grid">
+      <div class="card" data-id="1">
+        <img src="citrus-pear.jpg" alt="Citrus Pear" />
+        <div class="info">
+          <h3>Citrus Pear</h3>
+          <p>Fresh, crisp, and invigorating. A burst of citrus with subtle pear undertones.</p>
+          <span class="price">$7.00</span>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
-        <div class="product">
-            <h3>Stronger With You Oud</h3><h5>Price:$7</h5>
-            <p>Stronger With You Oud, is made with a special blend of Tea, Cloves, and Cinnamon, with Swedish Ice. It is mixed into one piece by the patented V.T.K Parfum mixer.</p>
+      </div>
+      <div class="card" data-id="2">
+        <img src="miami-mist.jpg" alt="Miami Mist" />
+        <div class="info">
+          <h3>Miami Mist</h3>
+          <p>A cool aquatic vibe with tropical hints. Bold and breezy like the coast.</p>
+          <span class="price">$7.00</span>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
-        <div class="product">
-            <h3>Miami Mist</h3><h5>Price:$7</h5>
-            <p>Miami Mist is made with scents from the beach, including various tropical fruits. It takes you straight to the shores of Miami.</p>
+      </div>
+      <div class="card" data-id="3">
+        <img src="stronger-oud.jpg" alt="Stronger With You Oud" />
+        <div class="info">
+          <h3>Stronger With You Oud</h3>
+          <p>Rich, deep oud blended with spice and warmth. For powerful presence.</p>
+          <span class="price">$7.00</span>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <section class="cart-modal" id="cartModal">
+    <div class="cart-modal-content">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p>Total: $<span id="totalPrice">0.00</span></p>
+      <button id="clearCart">Clear Cart</button>
+      <button id="closeCart">Close</button>
+    </div>
+  </section>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  <footer>
+    <p>&copy; 2025 V.T.K Cologne. All rights reserved.</p>
+  </footer>
 
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-    <div id="popup" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%);
-background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2); z-index:1000; max-width:90%; text-align:center;">
-  <h2>Welcome to V.T.K Cologne</h2>
-  <p>We are setting up a PayPal so we can use online orders. And remember, this is just for fun. Not a full business</p>
-  <button onclick="document.getElementById('popup').style.display='none'"
-    style="margin-top:10px; padding:8px 16px; background:#000; color:#fff; border:none; border-radius:5px;">Enter</button>
-</div>
-
-<script>
-  // Show pop-up when page loads
-  window.onload = function() {
-    document.getElementById('popup').style.display = 'block';
-  }
-</script>
-    <section id="appointment">
-    <h2>Book an Appointment</h2>
-    <form id="appointment-form">
-        <label for="appt-name">Name:</label>
-        <input type="text" id="appt-name" name="appt-name" required>
-
-        <label for="appt-email">Email:</label>
-        <input type="email" id="appt-email" name="appt-email" required>
-
-        <label for="appt-date">Date:</label>
-        <input type="date" id="appt-date" name="appt-date" required>
-
-        <label for="appt-time">Time:</label>
-        <input type="time" id="appt-time" name="appt-time" required>
-
-        <input type="submit" value="Book Appointment">
-    </form>
-</section>
-
-
-    <footer>
-        <p>&copy; 2025 V.T.K Cologne. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
