@@ -8,84 +8,82 @@
   <meta name="description" content="Discover handcrafted colognes from V.T.K Cologne, including Citrus Pear, Miami Mist, and Stronger With You Oud. Only $7.">
   <meta name="keywords" content="V.T.K Cologne, fragrance, Citrus Pear, Miami Mist, Stronger With You Oud, Luxury Scents.">
   <meta name="author" content="V.T.K Cologne">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">V.T.K Cologne</h1>
-            <button class="cart-btn">Cart (0)</button>
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">V.T.K Cologne</h1>
+      <div class="cart-icon">
+        <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+      </div>
+    </nav>
+    <div class="hero-text">
+      <h2>Unleash Your Signature</h2>
+      <p>Luxury scents. Unforgettable impressions.</p>
+    </div>
+  </header>
+
+  <section class="products">
+    <h2>Our Colognes</h2>
+    <div class="card-grid">
+      <div class="card" data-id="1">
+        <img src="images/citrus-pear.jpg" alt="Citrus Pear" />
+        <div class="info">
+          <h3>Citrus Pear</h3>
+          <p>Fresh, crisp, and invigorating. A burst of citrus with subtle pear undertones.</p>
+          <span class="price">$7.00</span>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2>Unleash Your Signature</h2>
-            <p>Luxury scents. Unforgettable impressions.</p>
+      </div>
+      <div class="card" data-id="2">
+        <img src="images/miami-mist.jpeg" alt="Miami Mist" />
+        <div class="info">
+          <h3>Miami Mist</h3>
+          <p>A cool aquatic vibe with tropical hints. Bold and breezy like the coast.</p>
+          <span class="price">$7.00</span>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products">
-        <div class="container">
-            <h2>Our Colognes</h2>
-            <div class="product-cards">
-                <!-- Product Card 1 -->
-                <div class="product-card">
-                    <img src="images/citrus-pear.jpg" alt="Citrus Pear">
-                    <h3>Citrus Pear</h3>
-                    <p>Fresh, crisp, and invigorating. A burst of citrus with subtle pear undertones.</p>
-                    <span class="price">$7.00</span>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <!-- Product Card 2 -->
-                <div class="product-card">
-                    <img src="images/miami-mist.jpg" alt="Miami Mist">
-                    <h3>Miami Mist</h3>
-                    <p>A cool aquatic vibe with tropical hints. Bold and breezy like the coast.</p>
-                    <span class="price">$7.00</span>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <!-- Product Card 3 -->
-                <div class="product-card">
-                    <img src="images/stronger-oud.jpg" alt="Stronger With You Oud">
-                    <h3>Stronger With You Oud</h3>
-                    <p>Rich, deep oud blended with spice and warmth. For a powerful presence.</p>
-                    <span class="price">$7.00</span>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
+      </div>
+      <div class="card" data-id="3">
+        <img src="images/stronger-oud.jpg" alt="Stronger With You Oud" />
+        <div class="info">
+          <h3>Stronger With You Oud</h3>
+          <p>Rich, deep oud blended with spice and warmth. For powerful presence.</p>
+          <span class="price">$7.00</span>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Us Section -->
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at:</p>
+    <ul>
+      <li>aadhav: <a href="mailto:gur160383@dcds.edu">gur160383@dcds.edu</a></li>
+      <li>vihaan: <a href="mailto:kum0503@dcds.edu">kum0503@dcds.edu</a></li>
+      <li>tej: <a href="mailto:var0902@dcds.edu">var0902@dcds.edu</a></li>
+      <li>keshav: <a href="mailto:kar145070@dcds.edu">kar145070@dcds.edu</a></li>
+    </ul>
+  </section>
 
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
+  <section class="cart-modal" id="cartModal">
+    <div class="cart-modal-content">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p>Total: $<span id="totalPrice">0.00</span></p>
+      <button id="clearCart">Clear Cart</button>
+      <button id="closeCart">Close</button>
+    </div>
+  </section>
 
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+  <footer>
+    <p>&copy; 2025 V.T.K Cologne. All rights reserved.</p>
+    <p class="coming-soon">More cologne coming soon!</p>
+  </footer>
 
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 V.T.K Cologne. All rights reserved.</p>
-            <p class="coming-soon">More colognes coming soon!</p>
-        </div>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
